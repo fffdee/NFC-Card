@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@mipmap/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:text="信息栏:"
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <TextView
+        android:id="@+id/PT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="当前信息:"
+        android:textColor="#333" />
+        <TextView
+            android:id="@+id/VT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="音量:"
+            android:textColor="#333" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+
+        android:layout_marginTop="10dp"
+        android:layout_margin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/last"
+            android:layout_marginStart="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/next"/>
+        <ToggleButton
+            android:id="@+id/play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textOn=" "
+            android:textOff=" "
+            android:layout_marginStart="35dp"
+
+            android:background="@drawable/play"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/last"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+        android:layout_marginTop="0dp"/>
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+     <TextView
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="音量:"
+         android:layout_gravity="center"
+         android:textSize="30sp"
+         android:textStyle="bold"
+         android:textColor="#eee"/>
+
+        <SeekBar
+            android:id="@+id/volue"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:thumbTintMode="add"
+            android:thumbTint="#f00"
+            android:progress="30"
+            android:min="0"
+            android:max="30"
+            android:thumbOffset="@dimen/cardview_default_radius"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+        android:layout_marginTop="0dp"/>
+    <LinearLayout
+
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:text="灯:"
+        android:textSize="25sp"
+        />
+     <ToggleButton
+         android:id="@+id/light"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center"
+            android:text="整点报时:"
+            android:textSize="25sp"
+            />
+
+        <ToggleButton
+            android:id="@+id/talkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+     />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:text="播放第"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:text="个文件"
+
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button3"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+        android:layout_marginTop="0dp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:text="闹钟："
+
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/flag"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#cce"
+                android:textColorHint="#333"
+
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:text="号"
+                android:layout_marginLeft="5dp"
+
+                android:textSize="20sp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:text="铃声设置："
+
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/number1"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#cce"
+                android:textColorHint="#333"
+
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:text="号"
+                android:layout_marginLeft="5dp"
+
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:text="时间："
+
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/shi"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#cce"
+                android:gravity="center"
+                android:inputType="number"
+
+                android:layout_marginLeft="20dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ccc"
+                android:text=":"
+                android:layout_marginLeft="20dp"
+
+                android:textSize="20sp"
+                />
+            <EditText
+                android:id="@+id/fen"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="#cce"
+                android:gravity="center"
+
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+
+                />
+
+
+
+        </LinearLayout>
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/update"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button3"
+            android:text="提交"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/button3"
+            android:text="清空闹钟"
+            android:textSize="20sp"/>
+    </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000"
+            />
+
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_gravity="center"
+            android:text="时间显示："
+            android:textSize="25sp"
+            />
+        <ToggleButton
+            android:id="@+id/disTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="显示间隔："
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="秒"
+                android:background="#fff"
+                android:layout_marginEnd="10dp" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="显示时长："
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/delay"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="秒"
+                android:background="#fff"
+                android:layout_marginEnd="10dp" />
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/timeSet"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button3"
+            android:text="提交"
+            android:layout_marginBottom="50dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</ScrollView>
